@@ -1,0 +1,8 @@
+<h2>Attraction Comments</h2>
+<div *ngIf="selectedAttraction">
+  <h3>{{ selectedAttraction.name }}</h3>
+  <p>Comments:</p>
+  <ul>
+    <li *ngFor="let comment of selectedAttraction.comments">{{ comment }}</li>
+  </ul>
+</div>

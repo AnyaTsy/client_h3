@@ -1,0 +1,7 @@
+<app-list (attractionSelected)="onAttractionSelected($event)"></app-list>
+<app-detail [selectedAttraction]="selectedAttraction"></app-detail>
+<app-form (attractionAdded)="onAttractionAdded($event)"></app-form>
+
+<div *appAttractionInfo="selectedAttraction">
+  Additional information about {{ selectedAttraction?.name }}
+</div>

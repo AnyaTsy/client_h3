@@ -1,0 +1,6 @@
+<h2>Attraction List</h2>
+<ul>
+  <li *ngFor="let attraction of attractions" (click)="showAttractionDetails(attraction)">
+    {{ attraction.name }}
+  </li>
+</ul>
